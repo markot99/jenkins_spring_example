@@ -16,7 +16,7 @@ public class JenkinsSpringExampleApplication implements ErrorController {
 
     @RequestMapping(value = {"", "/error"})
     public String handleAll() {
-        return "Hallo MTTP Kurs!";
+        return "Hallo MTPP Kurs!";
     }
 
 }
