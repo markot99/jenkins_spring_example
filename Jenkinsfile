@@ -33,7 +33,7 @@ pipeline {
         }
         stage('Archive Artifacts') {
             steps {
-                archiveArtifacts artifacts: 'target/jenkins_spring_example-0.0.1-SNAPSHOT.jar', followSymlinks: false
+                archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
             }
         }
         stage('Clean workspace') {
